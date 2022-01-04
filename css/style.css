@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Coaster";
+  src: url("../fonts/Сoaster.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Dopestyle";
+  src: url("../fonts/Dopestyle.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Coaster", sans-serif;
+}
+.container {
+  max-width: 1170px;
+  width: 98%;
+  margin: auto;
+}
+.section-title {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-family: 'Dopestyle', sans-serif;
+  font-size: 94px;
+  font-weight: 400; 
+  color: red;
+}
+.section-subtitle {
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: red;
+  font-size: 68px;
+}
+.links-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.links {
+  margin-top: 10px;
+}
+.text {
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 32px;
+}
+.item-image {
+  max-width: 48px;
+  margin-right: 15px;
+}
+.imageSvg {
+  max-width: 45px
+}
+.links-item {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.item-link {
+  font-size: 52px;
+  text-decoration: none;
+  color: black;
+  padding: 8px 20px 8px 20px;
+  display: inline-block;
+  border: 3px solid red;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px;
+}
+.puppy-text {
+  display: flex;
+  text-align: start;
+  max-width: 340px;
+  font-size: 26px;
+
+  margin-left: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.puppу-block {
+  text-align: center;
+}
+.puppy-image {
+  object-fit: cover;
+}
+@media (max-width: 800px) {
+  .section-title {
+    font-size: 19vw;
+    padding-bottom: 1vw;
+  }
+  .section-subtitle {
+    font-size: 13vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+  .text {
+    font-size: 6vw;
+    padding-top: 1vw;
+  }
+  .links-item {
+    margin-bottom: 1.7vw;
+  }
+  .item-link {
+    font-size: 10vw;
+  }
+  .item-image {
+    max-width: 8.5vw;
+    object-fit: cover;
+    margin-right: 1vw;
+  }
+  .puppy-text {
+    font-size: 4vw;
+    max-width: 51vw;
+  }
+  .puppy-image {
+    max-width: 300px;
+    object-fit: cover;
+  }
+}
